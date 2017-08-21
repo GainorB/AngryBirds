@@ -1,11 +1,11 @@
 //REQUIRE LODASH TO USE IT
-var _ = require('lodash');
+const _ = require('lodash');
 
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
 //SAVE ANGRY_BIRDS.JSON DATA TO A VARIABLE
-var angrybirds = require('../data/angry_birds');
+const angrybirds = require('../data/angry_birds');
 
 //RENDERS /ANGRY-BIRDS/
 //SHOWS THE PAGE WITH ALL BIRDS
