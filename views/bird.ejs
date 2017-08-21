@@ -1,0 +1,10 @@
+    <title><%= angrybirds["name"] %></title>
+    <%- include('partials/header') %>
+
+    <h1 class="meet">Meet <%= angrybirds["name"] %></h1>
+    <span class="sub"><a href="/">Go Home</a></span>
+    <span class="birdy"><p><%= angrybirds["group"] %></p>
+    <p><%= angrybirds["abilities"] %></p></span>
+    <p><a href="/angry-birds/#<%= angrybirds["id"] %>"><img src="<%= angrybirds["image"] %>" alt="<%= angrybirds["name"] %>"></a></p>
+
+<%- include('partials/footer') %>

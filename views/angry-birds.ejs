@@ -1,0 +1,11 @@
+<%- include('partials/header') %>
+    <span class="meet">Meet the Angry Birds</span><br><br>
+        <% angrybirds.forEach(function(bird){ %>
+        
+          <span class="bird"><a href="/angry-birds/<%= bird.id %>"><%= bird.name %> | <%= bird.group %><br><%= bird.abilities %></a></span>
+          <p id="<%= bird.id %>">
+              <a href="/angry-birds/<%= bird.id %>"><img src="<%= bird.image %>" alt="<%= bird.name %>"></a>
+          </p>
+        <% }); %>
+
+<%- include('partials/footer') %>
